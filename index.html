@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+	<p id="description">Danke dass Sie mithelfen die Plattform zu verbessern</p>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Name eingeben"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Email eingeben"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Alter<span class="clue">(optional)</span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Alter"
+      />
+    </div>
+    <div class="form-group">
+      <p>Was beschreibst am besten Ihre Funktion?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Funktion auswählen</option>
+        <option value="student">Student</option>
+        <option value="selbststaendig">Selbststaendig</option>
+        <option value="angestellter">angestellter</option>
+        <option value="nichtsagen">will es nicht sagen</option>
+        <option value="andere">andere</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>würden Sie freeCodeCamp einem Freund empfehlen?</p>
+      <label>
+        <input
+          name="user-recommend"
+          value="definitiv"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitiv</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="vielleicht"
+          type="radio"
+          class="input-radio"
+        />Vielleicht</label
+      >
+
+      <label
+        ><input
+          name="user-recommend"
+          value="unsicher"
+          type="radio"
+          class="input-radio"
+        />unsicher</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        was ist ihr Lieblingsfeature von freeCodeCamp?
+      </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Eine Option wählen</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="openSource">Open Source</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Was möchten Sie verbessert sehen?
+        <span class="clue">(alles ausfüllen was zutrifft)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="frontend-projekte"
+          type="checkbox"
+          class="input-checkbox"
+        />Frontend Projekte</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="back-end-projekte"
+          type="checkbox"
+          class="input-checkbox"
+        />Backend Projekte</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="data-visualisierung"
+          type="checkbox"
+          class="input-checkbox"
+        />Datenvisualisierung</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />Challenges</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="open-source-community"
+          type="checkbox"
+          class="input-checkbox"
+        />Open Source Community</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="help"
+          type="checkbox"
+          class="input-checkbox"
+        />help</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="videos"
+          type="checkbox"
+          class="input-checkbox"
+        />Videos</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="meetings"
+          type="checkbox"
+          class="input-checkbox"
+        />Meetings</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="wiki"
+          type="checkbox"
+          class="input-checkbox"
+        />Wiki</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="forum"
+          type="checkbox"
+          class="input-checkbox"
+        />Forum</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="additional"
+          type="checkbox"
+          class="input-checkbox"
+        />Additional</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Kommentare oder Vorschläge</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Ihre Nachricht hier eingeben..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Senden
+      </button>
+    </div>
+  </form>
+</div>
+
+  </body>
+</html>
